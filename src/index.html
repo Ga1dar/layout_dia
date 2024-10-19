@@ -8,12 +8,177 @@
     />
     <title>Dia</title>
     <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,
+                wght@0,400;0,600;0,700;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:
+    ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,
+    400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       rel="stylesheet"
       href="./styles/main.scss"
     />
   </head>
   <body>
-    <h1>Dia</h1>
+    <header class="header">
+      <div class="header__content">
+        <div class="top-bar">
+          <a
+            href="#"
+            class="top-bar__logo-link"
+          >
+            <img
+              src="/src/images/logo/Air (1).png"
+              alt="Logo_Air"
+              class="top-bar__logo"
+            />
+          </a>
+          <input
+            type="checkbox"
+            id="menu-toggle"
+            class="menu-toggle"
+          />
+          <label
+            for="menu-toggle"
+            class="top-bar__icon"
+          >
+            <span class="icon-menu"></span>
+          </label>
+          <div class="menu page-menu">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__link">
+                  <a href="#about_us">About us</a>
+                </li>
+                <li class="nav__link">
+                  <a href="#services">Services</a>
+                </li>
+                <li class="nav__link">
+                  <a href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav__link">
+                  <a href="#contacts">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <a
+            href="#hire_us"
+            class="top-bar__button"
+          >
+            Hire us
+          </a>
+        </div>
+        <div class="header__bottom">
+          <h1 class="header__title">Strategic Agency</h1>
+          <p class="header__text">
+            We believe in the power of bold ideas that
+            <br />
+            can solve business challenges.
+          </p>
+          <a
+            href="#services"
+            class="header__push"
+          >
+            Learn more
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section id="about_us">
+        <h1>Who we are</h1>
+      </section>
+      <section id="hire_us">
+        <h1>Our expertise</h1>
+      </section>
+      <section
+        class="services"
+        id="services"
+      >
+        <h1>Air is a full service creative agency</h1>
+      </section>
+      <section
+        class="testimonials"
+        id="testimonials"
+      >
+        <h1>Testimonials</h1>
+      </section>
+      <section class="resalt">
+        <h1>Vision, Passion, Resultss</h1>
+      </section>
+      <section
+        class="contacts"
+        id="contacts"
+      >
+        <div class="contact">
+          <div class="contacts__messege">
+            <h1 class="contacts__title">Send us a message</h1>
+            <form
+              onsubmit="this.reset(); return false;"
+              class="contacts__form"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="email@exa"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Please enter a valid name using letters only"
+                class="contacts__input"
+              />
+              <input
+                type="text"
+                name="name"
+                placeholder="Your name"
+                required
+                pattern="[A-Za-z\s]+"
+                title="Please enter a valid name using letters only"
+                class="contacts__input"
+              />
+              <textarea
+                name="name"
+                placeholder="Your message"
+                required
+                class="contacts__messege"
+              ></textarea>
+            </form>
+            <div class="contacts__info">
+              <h1 class="contacts__title">Contact us</h1>
+              <div class="contacts__call"></div>
+              <div class="contacts__address"></div>
+              <div class="contacts__socials"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="scripts/main.js"></script>
   </body>
 </html>
