@@ -68,5 +68,9 @@
       margin-top: 51px;
       margin-right: 54px;
     }
+
+    @include media(desktopLG) {
+      margin-right: 220px;
+    }
   }
 }

@@ -28,7 +28,14 @@
       flex-direction: row;
       column-gap: 48px;
       margin-left: 180px;
-      top: 27px;
+      top: 28px;
+    }
+
+    @include media(desktopLG) {
+      column-gap: 48px;
+      margin-left: 0;
+      top: 28px;
+      justify-content: center;
     }
   }
 

@@ -6,6 +6,12 @@
   overflow: hidden;
   width: 100%;
 
+  @include media(desktopLG) {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 250px;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -14,6 +20,10 @@
     &__desktop {
       @include media(desktop) {
         display: flex;
+      }
+
+      @include media(desktopLG) {
+        margin-top: 20px;
       }
     }
   }
