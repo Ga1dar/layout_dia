@@ -32,6 +32,12 @@ h1 {
     font-size: 24px;
     margin-bottom: 28px;
   }
+
+  @include media(desktop) {
+    width: 716px;
+    height: 144px;
+    margin-bottom: 128px;
+  }
 }
 
 .main__expertise__title {
@@ -45,6 +51,12 @@ h1 {
   margin-inline: auto;
   margin-top: 72px;
   margin-bottom: 56px;
+
+  @include media(desktop) {
+    margin-bottom: 11px;
+    width: 295px;
+    height: 65px;
+  }
 }
 
 .article__title {
@@ -67,6 +79,11 @@ h1 {
   @include media(tablet) {
     width: 362px;
   }
+
+  @include media(desktop) {
+    width: 214px;
+    font-size: 15px;
+  }
 }
 
 .prefix {
@@ -77,9 +94,15 @@ h1 {
   text-align: left;
   color: $prefix-color;
   text-transform: uppercase;
+}
 
+.prefix-servis {
   @include media(tablet) {
     grid-area: prefix;
+  }
+
+  @include media(desktop) {
+    margin-top: 128px;
   }
 }
 
@@ -99,6 +122,17 @@ h1 {
   }
 }
 
+.title-servis {
+  @include media(tablet) {
+    width: 264px;
+    grid-area: title;
+  }
+
+  @include media(desktop) {
+    margin-top: -120px;
+  }
+}
+
 .main__section__text {
   font-size: 15px;
   font-weight: 400;
@@ -113,9 +147,17 @@ h1 {
     margin-block: 0;
     &:nth-of-type(1) {
       grid-area: text1;
+
+      @include media(desktop) {
+        margin-top: -260px;
+      }
     }
     &:nth-of-type(2) {
       grid-area: text2;
+
+      @include media(desktop) {
+        margin-top: -220px;
+      }
     }
   }
 }
@@ -133,6 +175,10 @@ h1 {
   @include media(tablet) {
     width: 360px;
     margin-top: 0;
+  }
+
+  @include media(desktop) {
+    width: 196px;
   }
 }
 
