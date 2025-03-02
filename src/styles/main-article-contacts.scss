@@ -556,6 +556,26 @@
           width: 365px;
         }
 
+        @include media(desktop) {
+          width: 370px;
+          max-height: 200px;
+          overflow-y: auto;
+          padding-right: 10px;
+
+          &::-webkit-scrollbar {
+            width: 8px;
+          }
+
+          &::-webkit-scrollbar-track {
+            background: $header-text-color;
+            border-radius: 15px;
+          }
+        }
+
+        @include media(desktopLG) {
+          width: 460px;
+        }
+
         &__input {
           background-color: $input-bg-color;
           color: $header-text-color;
@@ -565,29 +585,43 @@
           padding: 10px;
           height: 41px;
           margin-bottom: 40px;
+          transition: background-color 5000s ease-in-out 0s;
 
           &:-webkit-autofill {
-            background-color: $input-bg-color;
-            color: $header-text-color;
-            box-shadow: 1000px $input-bg-color inset;
+            background-color: $input-bg-color !important;
+            color: $header-text-color !important;
+            box-shadow: 0 0 1000px $input-bg-color inset !important;
+            -webkit-text-fill-color: $header-text-color !important;
           }
 
-          &:focus {
+          &:-webkit-autofill:focus {
             border-bottom: 2px solid $services-numers-color;
+            background-color: $input-bg-color !important;
+            color: $header-text-color !important;
+            box-shadow: 1000px $input-bg-color inset !important;
+            -webkit-text-fill-color: $header-text-color !important;
           }
         }
 
         &__text {
           background-color: $input-bg-color;
-          color: $header-text-color;
+          color: $header-text-color !important;
           border: 1px solid $input-bg-color;
           border-bottom: 2px solid $header-text-color;
           outline: none;
           padding: 10px;
           height: 41px;
+          resize: none;
+          overflow: hidden;
 
-          &:focus {
-            border-bottom: 2px solid $services-numers-color;
+          &:-webkit-autofill {
+            color: $header-text-color !important;
+            -webkit-text-fill-color: $header-text-color !important;
+          }
+
+          &:-webkit-autofill:focus {
+            color: $header-text-color !important;
+            -webkit-text-fill-color: $header-text-color !important;
           }
         }
 
