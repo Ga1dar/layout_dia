@@ -558,18 +558,6 @@
 
         @include media(desktop) {
           width: 370px;
-          max-height: 200px;
-          overflow-y: auto;
-          padding-right: 10px;
-
-          &::-webkit-scrollbar {
-            width: 8px;
-          }
-
-          &::-webkit-scrollbar-track {
-            background: $header-text-color;
-            border-radius: 15px;
-          }
         }
 
         @include media(desktopLG) {

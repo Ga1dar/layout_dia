@@ -46,6 +46,10 @@
     margin: 20px;
     text-wrap: nowrap;
 
+    &:hover {
+      color: $services-numers-color;
+    }
+
     &::after {
       content: '';
       position: absolute;
